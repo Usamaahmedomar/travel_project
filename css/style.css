@@ -652,6 +652,21 @@ body {
     padding: 2rem 9%;
   }
 
+/* Desktop styles */
+@media (min-width: 1200px) {
+  /* styles for desktop devices */
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* styles for tablet devices */
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  /* styles for mobile devices */
+}
+
 
 
 
