@@ -87,6 +87,44 @@ body {
   }
 
 
+@media (min-width: 768px) {
+  .slider {
+    height: 400px; /* Increase height for tablets */
+  }
+
+  .slide-content h2 {
+    font-size: 22px; /* Larger font size for tablets */
+  }
+
+  .slide-content p {
+    font-size: 16px; /* Larger font size for tablets */
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1024px) {
+  .slider {
+    height: 500px; /* Increase height for desktops */
+  }
+
+  .slide-content h2 {
+    font-size: 24px; /* Larger font size for desktops */
+  }
+
+  .slide-content p {
+    font-size: 18px; /* Larger font size for desktops */
+  }
+}
+
+
+
+
+
+
+
+
+
+
 * {
     font-family: "Poppins", sans-serif;
     margin: 0;
