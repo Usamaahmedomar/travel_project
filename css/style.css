@@ -720,29 +720,102 @@ body {
     padding: 2rem 9%;
   }
 
+
+
+
+
 @media only screen and (max-width: 600px) {
   .header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Decrease padding for smaller screens */
   }
   .navbar {
-    margin-top: 20px;
+    margin-top: 10px; /* Adjust margin-top */
+    display: none; /* Hide the navbar by default */
+  }
+  .navbar.active {
+    display: flex; /* Display the navbar when active */
+    flex-direction: column; /* Display navigation links as column */
+    align-items: center;
   }
   .navbar a {
     display: block;
-    margin: 10px 0;
+    margin: 10px 0; /* Adjust margin */
+    font-size: 1.7rem; /* Adjust font size */
+    color: black; /* Set font color */
+    text-align: center; /* Center align text */
+  }
+  .navbar a:hover {
+    color: green; /* Change font color on hover */
+  }
+  .header .icons {
+    margin-top: 10px; /* Adjust margin-top */
+    display: flex; /* Display icons */
+    justify-content: center; /* Center align icons */
+  }
+  .header .icons a,
+  .header .icons div {
+    font-size: 2.5rem; /* Adjust icon size */
+    margin: 0 1rem; /* Adjust margin */
+    cursor: pointer; /* Set cursor as pointer */
+    color: black; /* Set icon color */
+  }
+  .header .icons a:hover,
+  .header .icons div:hover {
+    color: green; /* Change icon color on hover */
+  }
+  .header #menu-btn {
+    display: block; /* Display menu button */
+    font-size: 2.5rem; /* Adjust menu button size */
+    cursor: pointer; /* Set cursor as pointer */
+    margin-bottom: 10px; /* Adjust margin */
   }
 }
 
 /* For medium devices (tablets) */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
   /* Add your styles for medium devices here */
+  .header {
+    padding: 15px; /* Adjust padding */
+  }
+  .navbar {
+    flex-direction: row; /* Display navigation links horizontally */
+    margin-top: 0; /* Reset margin-top */
+  }
+  .navbar a {
+    margin: 0 1rem; /* Adjust margin between navigation links */
+  }
+  .icons {
+    margin-top: 0; /* Reset margin-top */
+  }
 }
 
 /* For large devices (desktops) */
 @media only screen and (min-width: 901px) {
   /* Add your styles for large devices here */
+  .navbar {
+    flex-direction: row; /* Display navigation links horizontally */
+    margin-top: 0; /* Reset margin-top */
+  }
+  .navbar a {
+    margin: 0 1rem; /* Adjust margin between navigation links */
+  }
+  .icons {
+    margin-top: 0; /* Reset margin-top */
+  }
+
+
+
 }
+
+/* Additional Media Query for very small screens */
+@media only screen and (max-width: 320px) {
+  .header {
+    padding: 5px; /* Further decrease padding for very small screens */
+  }
+}
+
 
 
 
