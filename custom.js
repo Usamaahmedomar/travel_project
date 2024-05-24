@@ -23,3 +23,10 @@ setInterval(() => {
 
 // Initialize the slider
 showSlide(currentSlide);
+
+// Toggle navbar visibility when clicking on the menu button
+document.getElementById("menu-btn").onclick = function() {
+    var navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("active");
+};
+
