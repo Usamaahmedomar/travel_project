@@ -117,6 +117,36 @@ body {
 }
 
 
+@media (min-width: 768px) {
+  .adventure .activity {
+      flex: 1 1 calc(33.333% - 20px);
+  }
+
+  .package {
+      flex: 1 1 calc(50% - 20px);
+  }
+
+  .contact-form {
+      flex-direction: row;
+  }
+
+  .contact-form .input-fields, .contact-form .msg {
+      flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .adventure .activity {
+      flex: 1 1 calc(25% - 20px);
+  }
+
+  .package {
+      flex: 1 1 calc(33.333% - 20px);
+  }
+}
+
+
+
 
 
 
