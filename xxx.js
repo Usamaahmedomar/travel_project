@@ -23,3 +23,5 @@ setInterval(() => {
 
 // Initialize the slider
 showSlide(currentSlide);
+
+
